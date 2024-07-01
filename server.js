@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/login', (req, res) => {
+app.get('login', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
@@ -28,7 +28,7 @@ app.post('/login', (req, res) => {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Login Successful</title>
-            <link rel="stylesheet" href="/styles.css">
+            <link rel="stylesheet" href="styles.css">
         </head>
         <body>
             <div class="container">
